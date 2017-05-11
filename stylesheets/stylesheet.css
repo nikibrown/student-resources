@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width:750px;
   margin: 0 auto;
 }
 
@@ -89,6 +89,36 @@ footer {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+main a {
+    display:inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+main a::after {
+    height:0px;
+    position:absolute;
+    width: auto;
+    content: attr(data-target);
+    text-indent: -9999px;
+    padding-left:11px;
+    padding-right: 11px;
+    line-height: 20px;
+    font-size:11px;
+    color: #fff;
+    background:#63c0f5;;
+    left:0px;
+    top:100%;
+    transition: height 100ms linear;
+    z-index: 9999;
+}
+main a:hover::after {
+    height:20px;
+    bottom:-20px;
+    text-indent: 0px;
+}
+
 section img {
   max-width: 100%
 }
@@ -139,6 +169,7 @@ dt {
 
 ul li {
   list-style: none;
+  margin-bottom: 5px;
 }
 
 ul li:before {
@@ -236,7 +267,6 @@ hr {
 
 a {
   color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
 /* Clearfix */
