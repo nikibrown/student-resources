@@ -1,3 +1,3 @@
-# bloc-student-resources
-Bloc Student Resources!
+# Student Resources
+
 
