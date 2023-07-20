@@ -1,2 +1,2 @@
-# bloc-student-resources
-Bloc Student Resources
+# student-resources
+Student Resources
